@@ -1,3 +1,6 @@
 <div class="container">
   <p>modal works!</p>
+  <div cdkDropList class="item-list" (cdkDropListDropped)="drop($event)">
+    <div class="item-row" *ngFor="let movie of movies" cdkDrag>{{movie}}</div>
+  </div>
 </div>

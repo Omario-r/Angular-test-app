@@ -14,7 +14,7 @@ export class TestComponent implements OnInit {
 
   openDialog(): void {
     const dialogRef = this.dialog.open(ModalComponent, {
-      width: '250px',
+      width: '550px',
       panelClass: 'modal-class'
       // data: {name: this.name, animal: this.animal}
     });
