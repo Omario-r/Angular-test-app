@@ -2,7 +2,7 @@
   <p>modal works!</p>
   <div cdkDropList class="item-list" (cdkDropListDropped)="drop($event)">
     <div class="item-row" *ngFor="let info of data; let i = index" cdkDrag>
-      {{info}}
+      {{info.name}}
       <div class="item-icon-group" >
         <svg (click)="binClick(i)" height="20pt" viewBox="-48 0 407 407" width="20pt" xmlns="http://www.w3.org/2000/svg">
           <path fill="white" d="m89.199219 37c0-12.132812 9.46875-21 21.601562-21h88.800781c12.128907 0 21.597657 8.867188 21.597657 21v23h16v-23c0-20.953125-16.644531-37-37.597657-37h-88.800781c-20.953125 0-37.601562 16.046875-37.601562 37v23h16zm0 0"/>
