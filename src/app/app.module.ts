@@ -9,12 +9,14 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TestComponent } from './test/test.component';
 import { ModalComponent } from './test/modal/modal.component';
+import { EyeIconComponent } from './test/modal/eye-icon/eye-icon.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ModalComponent,
     TestComponent,
+    EyeIconComponent,
   ],
   imports: [
     BrowserModule,
