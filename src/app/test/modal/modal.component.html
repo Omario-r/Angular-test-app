@@ -1,7 +1,7 @@
 <div class="container">
-  <p>modal works!</p>
+  <p mat-dialog-title >modal works!</p>
   <div cdkDropList class="item-list" (cdkDropListDropped)="drop($event)">
-    <div class="item-row" *ngFor="let info of data; let i = index" cdkDrag>
+    <div class="item-row" *ngFor="let info of modalData; let i = index" cdkDrag>
       {{info.name}}
       <div class="item-icon-group" >
         <svg (click)="binClick(i)" height="20pt" viewBox="-48 0 407 407" width="20pt" xmlns="http://www.w3.org/2000/svg">
@@ -9,8 +9,13 @@
           <path fill="white" d="m60.601562 407h189.199219c18.242188 0 32.398438-16.046875 32.398438-36v-247h-254v247c0 19.953125 14.15625 36 32.402343 36zm145.597657-244.800781c0-4.417969 3.582031-8 8-8s8 3.582031 8 8v189c0 4.417969-3.582031 8-8 8s-8-3.582031-8-8zm-59 0c0-4.417969 3.582031-8 8-8s8 3.582031 8 8v189c0 4.417969-3.582031 8-8 8s-8-3.582031-8-8zm-59 0c0-4.417969 3.582031-8 8-8s8 3.582031 8 8v189c0 4.417969-3.582031 8-8 8s-8-3.582031-8-8zm0 0"/>
           <path fill="white" d="m20 108h270.398438c11.046874 0 20-8.953125 20-20s-8.953126-20-20-20h-270.398438c-11.046875 0-20 8.953125-20 20s8.953125 20 20 20zm0 0"/>
         </svg>
-        <app-eye-icon (click)="eyeClick(i)" [isShow]="data[i].show"></app-eye-icon>
+        <app-eye-icon (click)="eyeClick(i)" [isShow]="modalData[i].show"></app-eye-icon>
       </div>
       </div>
+  </div>
+  <hr class="line" color="black">
+  <div>
+    <button mat-stroked-button class="button-active" (click)="onSave()">Save</button>
+    <button mat-stroked-button class="button" mat-dialog-close>Close</button>
   </div>
 </div>

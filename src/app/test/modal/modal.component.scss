@@ -60,3 +60,29 @@
 .item-icon-group {
   cursor: default;
 }
+
+.line {
+  width: 100%;
+}
+
+.buttons-box {
+  min-height: 60px;
+}
+
+.button-active {
+  background-color: #242424;
+  padding: 10px;
+  color: white;
+  border-color: #00a822;
+  border-width: 2px;
+  margin-right: 10px;
+}
+
+.button {
+  background-color: #242424;
+  padding: 10px;
+  color: white;
+  border-color: #5a5a5a;
+  border-width: 2px;
+  margin-right: 10px;
+}

@@ -1,0 +1,18 @@
+.container {
+  width: 200px;
+  height: 100px;
+  background-color: #242424;
+  border-color: gray;
+  border-width: 2px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button-active {
+  background-color: #242424;
+  padding: 10px;
+  color: white;
+  border-color: #00a822;
+  border-width: 2px;
+}
